@@ -51,7 +51,7 @@
   }
 }
 
-html:focus-within {
+html {
   scroll-behavior: smooth;
 }
 
@@ -245,8 +245,13 @@ select {
   display: inline-block;
   padding: 0 1em;
   cursor: pointer;
+  transition: ease-in-out 0.3s;
 }
 
+.menu-item:hover {
+  transition: ease-in-out 0.3s;
+  color: white;
+}
 a {
   text-decoration: none;
 }
