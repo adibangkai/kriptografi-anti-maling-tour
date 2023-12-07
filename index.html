@@ -10,10 +10,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/badge.png" type="image/x-icon" />
     <script src="/assets/rellax.min.js"></script>
     <title>Kriptografi anti Maling 2024 Tangerang Tour</title>
   </head>
   <body>
+    <img
+      src="assets/bg-motif.png"
+      class="bg-motif rellax"
+      data-rellax-speed="5"
+      alt=""
+    />
     <header class="primary-header flex">
       <img
         src="assets/badge.png"
@@ -23,98 +30,95 @@
       />
       <nav>
         <ul class="primary-navigation">
-          <li class="menu-item">Tour</li>
+          <a href="#tour" class="menu-item">Tour</a>
           <li class="menu-item">Merch</li>
         </ul>
       </nav>
     </header>
     <div class="container">
-      <section class="mainposter">
-        <div
-          class="flex"
-          style="
-            justify-content: center;
-            flex-direction: column;
-            position: relative;
-            min-height: 100vh;
-          "
-        >
-          <img src="assets/bg-motif.png" class="bg-motif" alt="" />
-          <img src="assets/logored.png" alt="logo" class="logo layer" />
-          <img src="assets/logowhite.png" alt="logo" class="logo" />
-          <img src="assets/ondel.png" class="ondel" />
-          <div class="ornamen">
+      <section class="flex mainposter">
+        <div style="margin: auto">
+          <img src="assets/ondel.png" class="ondel poster" />
+          <img src="assets/logored.png" alt="logo" class="logo layer poster" />
+          <img src="assets/logowhite.png" alt="logo " class="logo poster" />
+        </div>
+      </section>
+      <section class="tour-effects">
+        <div class="ornamen">
+          <div style="margin: auto" class="flex">
             <img
               src="assets/topeng-1.png"
               class="topeng rellax"
               data-rellax-zindex="1"
               data-rellax-speed="1"
-              style="transform: scale(0.8)"
+              style="transform: scale(0.6)"
             />
             <img
               src="assets/topengmid.png"
               class="topeng rellax"
               data-rellax-zindex="5"
               data-rellax-speed="2"
-              style="transform: scale(1.4)"
+              style="transform: scale(0.8)"
             />
             <img
               src="assets/topengkanan.png"
               class="topeng rellax"
               data-rellax-speed="4"
               data-rellax-zindex="5"
-              style="transform: scale(0.8)"
+              style="transform: scale(0.4)"
             />
           </div>
-        </div>
-        <div class="tour-title">
-          <h2 class="tour-de">tour de kabupaten</h2>
-          <h1 class="tangerang">TANGERANG</h1>
+          <p id="tour"></p>
+          <div class="bg-tng">
+            <h2 class="tour-de rellax">tour de kabupaten</h2>
+            <h1 class="tangerang rellax">TANGERANG</h1>
+          </div>
         </div>
       </section>
       <section class="tour">
-        <ul>
-          <li class="letter-spacing-3"><span>06/02 </span>Pakuhaji</li>
-          <li class="letter-spacing-3"><span>08/02 </span>Paku Alam</li>
-          <li class="letter-spacing-3"><span>12/02 </span>Buaran Mangga</li>
-          <li class="letter-spacing-3"><span>29/02 </span>Buaran Bambu</li>
-          <li class="letter-spacing-3"><span>05/03 </span>Bunisari</li>
-          <li class="letter-spacing-3"><span>10/03 </span>Rawa Boni</li>
-          <li class="letter-spacing-3"><span>12/03 </span>Laksana</li>
-          <li class="letter-spacing-3"><span>24/03 </span>Kohod</li>
-          <li class="letter-spacing-3"><span>30/03 </span>Sukawali</li>
-          <li class="letter-spacing-3"><span>06/04 </span>Kramat</li>
-          <li class="letter-spacing-3"><span>09/04 </span>Surya Bahari</li>
-          <li class="letter-spacing-3"><span>16/04 </span>Kiara Payung</li>
-          <li class="letter-spacing-3"><span>22/04 </span>Gaga</li>
-          <li class="letter-spacing-3"><span>31/04 </span>Kalibaru</li>
+        <div style="grid-column: span 2; justify-content: center" class="flex">
+          <h2>Tour Dates</h2>
+        </div>
+        <ul class="letter-spacing-3" style="margin: auto">
+          <li><span>06/02 </span>Pakuhaji</li>
+          <li><span>08/02 </span>Paku Alam</li>
+          <li><span>12/02 </span>Buaran Mangga</li>
+          <li><span>29/02 </span>Buaran Bambu</li>
+          <li><span>05/03 </span>Bunisari</li>
+          <li><span>10/03 </span>Rawa Boni</li>
+          <li><span>12/03 </span>Laksana</li>
+          <li><span>24/03 </span>Kohod</li>
+          <li><span>30/03 </span>Sukawali</li>
+          <li><span>06/04 </span>Kramat</li>
+          <li><span>09/04 </span>Surya Bahari</li>
+          <li><span>16/04 </span>Kiara Payung</li>
+          <li><span>22/04 </span>Gaga</li>
+          <li><span>31/04 </span>Kalibaru</li>
         </ul>
-        <ul>
-          <li class="letter-spacing-3"><span>04/08 </span>Sukatani</li>
-          <li class="letter-spacing-3"><span>10/08 </span>Jambukarya</li>
-          <li class="letter-spacing-3"><span>17/08 </span>Daon</li>
-          <li class="letter-spacing-3"><span>30/08 </span>Rancabango</li>
-          <li class="letter-spacing-3"><span>10/09 </span>Rajeg Mulya</li>
-          <li class="letter-spacing-3"><span>20/09 </span>Rajeg</li>
-          <li class="letter-spacing-3"><span>25/09 </span>Sukamanah</li>
-          <li class="letter-spacing-3"><span>30/09 </span>Pangarengan</li>
-          <li class="letter-spacing-3"><span>12/10 </span>Tanjakan</li>
-          <li class="letter-spacing-3"><span>18/10 </span>Tanjakan Mekar</li>
-          <li class="letter-spacing-3"><span>22/10 </span>Sukasari</li>
-          <li class="letter-spacing-3"><span>30/10 </span>Mekarsari</li>
-          <li class="letter-spacing-3"><span>11/11 </span>Lembangsari</li>
+        <ul style="margin: auto">
+          <li><span>04/08 </span>Sukatani</li>
+          <li><span>10/08 </span>Jambukarya</li>
+          <li><span>17/08 </span>Daon</li>
+          <li><span>30/08 </span>Rancabango</li>
+          <li><span>10/09 </span>Rajeg Mulya</li>
+          <li><span>20/09 </span>Rajeg</li>
+          <li><span>25/09 </span>Sukamanah</li>
+          <li><span>30/09 </span>Pangarengan</li>
+          <li><span>12/10 </span>Tanjakan</li>
+          <li><span>18/10 </span>Tanjakan Mekar</li>
+          <li><span>22/10 </span>Sukasari</li>
+          <li><span>30/10 </span>Mekarsari</li>
+          <li><span>11/11 </span>Lembangsari</li>
         </ul>
-        <div
-          style="
-            grid-column: span 2;
-
-            justify-content: center;
-          "
-          class="flex"
-        >
+        <div style="grid-column: span 2; justify-content: center" class="flex">
           <button class="ticket-book">Book Ticket!</button>
         </div>
       </section>
+      <footer>
+        <p style="text-align: center; padding-bottom: 2em">
+          kriptografi anti maling &copy; 2024
+        </p>
+      </footer>
     </div>
   </body>
   <script>

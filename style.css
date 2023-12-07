@@ -5,6 +5,8 @@
   --clr-white: 0 0% 100%;
   --primary-color: #a70b15;
   --secondary-color: #b0b0b0;
+  --third-color: rgb(51, 55, 74);
+
   /* font-sizes */
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
   --fs-800: 3.5rem;
@@ -18,6 +20,14 @@
   /* font-families */
 
   --ff-sans-normal: "Josefin Sans", sans-serif;
+}
+@font-face {
+  font-family: "phantom-storm";
+  src: url("assets/phantomstorm.ttf");
+}
+
+.phantom {
+  font-family: "phantom-storm";
 }
 
 @media (min-width: 35em) {
@@ -138,7 +148,7 @@ select {
 .container {
   padding-inline: 2em;
   margin-inline: auto;
-  max-width: 80rem;
+  max-width: 100%;
 }
 
 .grid-container {
@@ -231,17 +241,21 @@ select {
 }
 
 .menu-item {
-  float: left;
   color: var(--secondary-color);
   display: inline-block;
   padding: 0 1em;
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 .primary-header {
   justify-content: space-between;
   align-items: center;
-  margin: 1em 8em;
+
+  margin: 0 8em;
 }
 
 .primary-navigation {
@@ -254,70 +268,104 @@ select {
   backdrop-filter: blur(1.5rem);
 }
 
+.mainposter {
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: max-content;
+  width: 100%;
+}
+
 .logo {
-  margin: 0 auto;
   max-width: 410px;
   position: absolute;
-  top: 0;
-  left: 14%;
+  top: 28em;
   z-index: 10;
 }
+
 .layer {
-  top: 5px;
+  top: 28.4em;
   z-index: 10;
 }
 
 .bg-motif {
-  top: -4em;
-  max-width: 600px;
-
-  opacity: 0.3;
+  top: -0.3em;
+  z-index: -20;
+  opacity: 0.15;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   position: absolute;
 }
 
 .ondel {
-  position: absolute;
-  top: 4em;
-  left: 13%;
-  width: 66%;
+  margin-top: 0;
+  width: 400px;
+}
+
+.tour-effects {
+  margin-top: 6em;
 }
 
 .ornamen {
-  position: absolute;
-  top: 34em;
-  z-index: 2;
   display: flex;
-  width: 30%;
-  margin: 0 auto;
+  width: 80vw;
+  position: relative;
 }
 
+.topeng {
+  max-width: 300px;
+  z-index: 10;
+}
 ul {
   list-style: none;
 }
 
+.bg-tng {
+  color: var(--third-color);
+  position: absolute;
+  opacity: 0.4;
+}
+
 .tour-de {
-  font-size: var(--fs-600);
+  font-size: var(--fs-800);
+  z-index: -9;
+
+  left: 0;
 }
 
 .tangerang {
-  font-size: var(--fs-800);
+  font-size: var(--fs-900);
+  position: absolute;
+  margin-top: -0.3em;
+  z-index: -9;
+  left: 0;
 }
 
 .logo-title {
   margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
 }
-
-.tour-title {
-  margin-top: 10em;
+#tour {
+  margin-top: 14em;
 }
 .tour {
+  padding-top: 1em;
   display: grid;
+  position: relative;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 13em;
+  z-index: 4;
+}
+.tour-title {
+  margin-top: 10em;
+  width: 100%;
 }
 
 .tour li span {
   display: inline-block;
+  z-index: 10;
   width: 80px; /* Adjust the width as needed */
 }
 
@@ -330,5 +378,9 @@ ul {
 }
 
 .ticket-book:hover {
-  border: 2px solid #ca232e;
+  border: 2px solid rgb(235, 74, 84);
+}
+
+footer {
+  color: var(--secondary-color);
 }
