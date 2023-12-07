@@ -303,6 +303,7 @@ a {
   left: 0;
   right: 0;
   position: absolute;
+  animation: fadeIn 2s infinite alternate;
 }
 
 .ondel {
@@ -388,4 +389,14 @@ ul {
 
 footer {
   color: var(--secondary-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.03;
+  }
+
+  to {
+    opacity: 0.15;
+  }
 }
